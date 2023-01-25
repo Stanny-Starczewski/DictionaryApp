@@ -7,9 +7,15 @@ class ViewController: UIViewController {
         ["Carrot", "Pickle", "Potato", "Tomato"]
     ]
     
+    let headers = ["Fruits", "Vegetables"]
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        tableView.sectionHeaderHeight = 32
     }
     
 }
@@ -38,7 +44,12 @@ extension ViewController: UITableViewDataSource {
         cell.contentConfiguration = content
         return cell
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return words.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return headers[section]
     }
 }

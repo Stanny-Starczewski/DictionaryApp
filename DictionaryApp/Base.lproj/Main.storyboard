@@ -44,6 +44,9 @@
                             <constraint firstItem="Lie-Y4-Jlt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZwO-DT-0KV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Lie-Y4-Jlt" id="oZv-EH-MiC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
