@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class introductionToImageFeedUITestsLaunchTests: XCTestCase {
+final class DictionaryAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

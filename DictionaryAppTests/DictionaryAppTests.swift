@@ -6,9 +6,9 @@
 //
 
 import XCTest
-@testable import introductionToImageFeed
+@testable import DictionaryApp
 
-final class introductionToImageFeedTests: XCTestCase {
+final class DictionaryAppTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
