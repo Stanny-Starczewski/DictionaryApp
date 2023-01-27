@@ -53,3 +53,21 @@ extension ViewController: UITableViewDataSource {
         return headers[section]
     }
 }
+
+extension ViewController: UITableViewDelegate {
+    // тут располагаются методы делегата
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let alert = UIAlertController(title: nil,
+                                  message: "Вы нажали на: \(words[indexPath.section] [indexPath.row])",
+                                  preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            alert.dismiss(animated: true)
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}
+
+
