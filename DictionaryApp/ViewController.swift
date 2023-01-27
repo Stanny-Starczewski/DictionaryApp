@@ -4,10 +4,11 @@ class ViewController: UIViewController {
     
     let words = [
         ["Apple", "Pear", "Watermelon"],
-        ["Carrot", "Pickle", "Potato", "Tomato"]
+        ["Carrot", "Pickle", "Potato", "Tomato"],
+        ["Strawberry", "Raspberry", "Blackberry", "Blueberry"]
     ]
     
-    let headers = ["Fruits", "Vegetables"]
+    let headers = ["Fruits", "Vegetables", "Berry"]
     
     @IBOutlet weak var tableView: UITableView!
     
